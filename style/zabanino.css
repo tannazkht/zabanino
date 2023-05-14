@@ -60,6 +60,49 @@ body {
   color: #808080;
 }
 
+.good-news-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  position: relative;
+  top: 150px;
+  bottom: 500px;
+  margin: auto;
+  width: 350px;
+  height: 250px;
+  border-radius: 45px;
+  background-color: #ffffff;
+  box-shadow: 0 21px 13px -9px rgba(0, 0, 0, 0.06);
+}
+.good-news-box img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 50px;
+  width: 100px;
+  height: auto;
+  background: rgba(90, 198, 144, 0.12);
+  border-radius: 100%;
+  padding: 15px;
+}
+.good-news-box .texts {
+  position: relative;
+  bottom: 30px;
+}
+.good-news-box .texts h3 {
+  word-spacing: -0.4ch;
+}
+.good-news-box .texts p {
+  color: #c5c5c5;
+}
+.good-news-box .texts span {
+  color: #4482f4;
+  border-bottom: 2px solid #4482f4;
+}
+
 .footer {
   background-color: #ffffff;
   position: fixed;

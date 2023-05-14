@@ -65,6 +65,48 @@ body {
         color: #808080;
     }
 }
+.good-news-box {
+    @include vertical-center();
+    direction: rtl;
+    position: relative;
+    top: 150px;
+    bottom: 500px;
+    margin: auto;
+    width: 350px;
+    height: 250px;
+    border-radius: 45px;
+    background-color: #ffffff;
+    box-shadow: 0 21px 13px -9px rgba(0,0,0,0.06);
+    img {
+        @include center();
+        position: relative;
+        bottom: 50px;
+        width: 100px;
+        height: auto;
+        background: rgba(90,198,144,0.12);
+        border-radius: 100%;
+        padding: 15px;
+    }
+    .texts {
+        position: relative;
+        bottom: 30px;
+        h3 {
+            word-spacing: -.4ch;
+        }
+        p {
+            color: #c5c5c5;
+        }
+        span {
+            color: #4482f4;
+            border-bottom: 2px solid #4482f4;
+        }
+    }
+}
+
+
+
+
+
 .footer {
     // display: flex;
     // justify-content: space-between;
