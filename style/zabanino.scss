@@ -12,6 +12,12 @@
     flex-direction: row;
     justify-content: center;
 }
+@mixin vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 * {
     box-sizing: border-box;
 }
@@ -38,6 +44,25 @@ body {
         span {
             color: #4482f4;
         }
+    }
+}
+.teachers-chats {
+    @include horizontal-center();
+    img {
+        width: 200px;
+        height: auto;
+        margin: 3%;
+    }
+    #jaberi-chat {
+        position: relative;
+        top: 50px;
+    }
+}
+.go-down {
+    @include vertical-center();
+    p {
+        font-size: 14px;
+        color: #808080;
     }
 }
 .footer {
@@ -68,10 +93,18 @@ body {
     }
 }
 .freeExperienceButton {
-    // position: relative;
-    @include center();
+    @include vertical-center();
+    text-decoration: none;
     background-image: linear-gradient(#6DBEF4, #3B8AE5);
+    color: #ffffff;
+    position: fixed;
+    left: 40%;
+    bottom: 25px;
     border-radius: 30px;
     width: 18%;
     height: 45px;
+    span {
+        font-size: 23px;
+        color: #ffffff;
+    }
 }
