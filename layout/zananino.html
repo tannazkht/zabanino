@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style/zabanino.css">
     <title> zabanino </title>
 </head>
@@ -17,14 +18,14 @@
         <h1>کلاس های آنلاین <span>انگلیسی</span> کلاسینو</h1>
     </div>
     <div class="teachers-chats">
-        <img id="jaberi-chat" src="../assets/images/chat j.svg" alt="alireza jaberi chat">
-        <img id="soltani-chat" src="../assets/images/chat s.svg" alt="nastaran solatni chat">
+        <img id="jaberi-chat" src="../assets/images/chat j.svg" data-aos="fade-right" alt="alireza jaberi chat">
+        <img id="soltani-chat" src="../assets/images/chat s.svg" data-aos="fade-left" alt="nastaran solatni chat">
     </div>
     <div class="go-down">
         <p>برو پایین صفحه</p>
         <img src="../assets/images/arrrow.svg">
     </div>
-    <div class="good-news-box">
+    <div class="box good-news-box" data-aos="flip-up">
         <img src="../assets/images/speaker.png">
         <div class="texts">
         <h3>خبر خوب برای تمام زبان آموزان!</h3>
@@ -32,26 +33,49 @@
         <span>مناسب برای همه در هر سطحی از زبان</span>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-
-
+    <div class="attributes">
+        <h2>ویژگی ها</h2>
+        <img src="../assets/images/vijegi1.svg" alt="note icon">
+        <h3>تدریس به همراه ارائه جزوه ترکیبی</h3>
+        <span>(استفاده از چند منبع مختلف در جزوه)</span>
+        <img src="../assets/images/vijegi2.svg">
+        <h3>حل تکالیف</h3>
+        <img src="../assets/images/vijegi3.svg">
+        <h2>آزمون های کلاسی</h2>
+        <img src="../assets/images/vijegi4.svg">
+        <h3>تمرین های گروهی آنلاین در تلگرام</h3>
+        <h4>مخصوص مهارت Speaking</h4>
+        <img src="../assets/images/vijegi5.svg">
+        <h3>جلسه اول رایگان</h3>
+    </div>
+    <div class="box calendar-box" data-aos="flip-up">
+        <img src="../assets/images/calendar.png">
+        <p> ۱ / بهمن / ۱۴۰۱</p>
+        <p>ساعت ۱۶</p>
+    </div>
+    <div class="box laptop-box" data-aos="flip-up">
+        <img src="../assets/images/laptop.png">
+        <p style="width: 90%;">تمامی کلاس ها در سایت کلاسینو برگزار می شود.</p>
+    </div>
+    <div class="box teachers-box" data-aos="flip-up">
+        <img src="../assets/images/teacher.png">
+        <h2>اساتید دوره</h2>
+        <p>استاد نسترن سلطانی <br> استاد علیرضا جابری</p>
+    </div>
+    
 
     <div class="footer">
-        <img id="Jaberi" src="../assets/images/jabnew.png" alt="teacher Jaberi" title="mr.Jaberi">
-        <img id="Soltani" src="../assets/images/nastnew.png" alt="teacher Soltani" title="ms.Soltani">
+        <img id="Jaberi" src="../assets/images/jabnew.png" alt="teacher Jaberi" title="mr.Jaberi" data-aos="zoom-in-right">
+        <img id="Soltani" src="../assets/images/nastnew.png" alt="teacher Soltani" title="ms.Soltani" data-aos="zoom-in-left">
     </div>
     <a href="#" class="freeExperienceButton"><i class='fas fa-arrow-left'></i>  رایگان تجربه کن </a>
+    
+    
+    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

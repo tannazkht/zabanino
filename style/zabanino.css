@@ -60,7 +60,7 @@ body {
   color: #808080;
 }
 
-.good-news-box {
+.box, .good-news-box, .calendar-box, .laptop-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +76,7 @@ body {
   background-color: #ffffff;
   box-shadow: 0 21px 13px -9px rgba(0, 0, 0, 0.06);
 }
-.good-news-box img {
+.box img, .good-news-box img, .calendar-box img, .laptop-box img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,19 +88,58 @@ body {
   border-radius: 100%;
   padding: 15px;
 }
-.good-news-box .texts {
+.box .texts, .good-news-box .texts, .calendar-box .texts, .laptop-box .texts {
   position: relative;
   bottom: 30px;
 }
-.good-news-box .texts h3 {
+.box .texts h3, .good-news-box .texts h3, .calendar-box .texts h3, .laptop-box .texts h3 {
   word-spacing: -0.4ch;
 }
-.good-news-box .texts p {
+.box .texts p, .good-news-box .texts p, .calendar-box .texts p, .laptop-box .texts p {
   color: #c5c5c5;
 }
-.good-news-box .texts span {
+.box .texts span, .good-news-box .texts span, .calendar-box .texts span, .laptop-box .texts span {
   color: #4482f4;
   border-bottom: 2px solid #4482f4;
+}
+
+.attributes {
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+}
+.attributes img {
+  width: 55px;
+  height: auto;
+  margin-top: 20px;
+}
+.attributes span {
+  color: #959595;
+}
+
+.calendar-box p {
+  color: #959595;
+  font-size: 20px;
+}
+
+.laptop-box {
+  margin-top: 250px;
+  color: #959595;
+}
+
+.teachers-box {
+  position: relative;
+  top: 400px;
+}
+.teachers-box p {
+  color: #959595;
+}
+.teachers-box h2, .teachers-box p {
+  position: relative;
+  bottom: 15px;
 }
 
 .footer {

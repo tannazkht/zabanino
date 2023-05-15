@@ -65,7 +65,7 @@ body {
         color: #808080;
     }
 }
-.good-news-box {
+.box, .good-news-box, .calendar-box, .laptop-box {
     @include vertical-center();
     direction: rtl;
     position: relative;
@@ -102,6 +102,51 @@ body {
         }
     }
 }
+.attributes {
+    direction: rtl;
+    @include vertical-center();
+    margin-top: 250px;
+    h2 {
+        // position: fixed;
+        // bottom: 400px;
+    }
+    img {
+        width: 55px;
+        height: auto;
+        margin-top: 20px;
+    }
+    span {
+        color: #959595;
+    }
+}
+.calendar-box {
+    p {
+        color: #959595;
+        font-size: 20px;
+    }
+}
+.laptop-box {
+    margin-top: 250px;
+    color: #959595;
+}
+.teachers-box {
+    position: relative;
+    top: 400px;
+    // bottom: 400px;
+    p {
+        color: #959595;
+    }
+    h2, p {
+        position: relative;
+        bottom: 15px;
+    }
+}
+
+
+
+
+
+
 
 
 
