@@ -90,6 +90,7 @@ body {
     .texts {
         position: relative;
         bottom: 30px;
+        text-align: center;
         h3 {
             word-spacing: -.4ch;
         }
@@ -107,51 +108,51 @@ body {
     @include vertical-center();
     margin-top: 250px;
     h2 {
-        // position: fixed;
-        // bottom: 400px;
+        margin-top: 100px;
     }
     img {
         width: 55px;
         height: auto;
-        margin-top: 20px;
+        margin-top: 50px;
     }
-    span {
+    span, h4 {
         color: #959595;
     }
 }
 .calendar-box {
+    margin-top: 80px;
+    img {
+        margin-bottom: 20px;
+    }
     p {
         color: #959595;
         font-size: 20px;
+        text-align: center;
+        margin-bottom: 50px;
     }
 }
 .laptop-box {
     margin-top: 250px;
-    color: #959595;
+    img {
+        margin-bottom: 30px;
+    }
+    p {
+       color: #959595; 
+       margin-bottom: 50px;
+    } 
 }
 .teachers-box {
-    position: relative;
-    top: 400px;
-    // bottom: 400px;
+    margin-top: 250px;
+    margin-bottom: 400px;
     p {
         color: #959595;
+        text-align: center;
     }
     h2, p {
         position: relative;
         bottom: 15px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 .footer {
     // display: flex;
     // justify-content: space-between;

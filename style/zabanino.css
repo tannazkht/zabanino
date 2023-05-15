@@ -91,6 +91,7 @@ body {
 .box .texts, .good-news-box .texts, .calendar-box .texts, .laptop-box .texts {
   position: relative;
   bottom: 30px;
+  text-align: center;
 }
 .box .texts h3, .good-news-box .texts h3, .calendar-box .texts h3, .laptop-box .texts h3 {
   word-spacing: -0.4ch;
@@ -111,31 +112,49 @@ body {
   align-items: center;
   margin-top: 250px;
 }
+.attributes h2 {
+  margin-top: 100px;
+}
 .attributes img {
   width: 55px;
   height: auto;
-  margin-top: 20px;
+  margin-top: 50px;
 }
-.attributes span {
+.attributes span, .attributes h4 {
   color: #959595;
 }
 
+.calendar-box {
+  margin-top: 80px;
+}
+.calendar-box img {
+  margin-bottom: 20px;
+}
 .calendar-box p {
   color: #959595;
   font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .laptop-box {
   margin-top: 250px;
+}
+.laptop-box img {
+  margin-bottom: 30px;
+}
+.laptop-box p {
   color: #959595;
+  margin-bottom: 50px;
 }
 
 .teachers-box {
-  position: relative;
-  top: 400px;
+  margin-top: 250px;
+  margin-bottom: 400px;
 }
 .teachers-box p {
   color: #959595;
+  text-align: center;
 }
 .teachers-box h2, .teachers-box p {
   position: relative;
