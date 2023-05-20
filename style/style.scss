@@ -112,6 +112,10 @@ body {
     .attributes {
         direction: rtl;
         @include vertical-center();
+        h2 {
+            position: sticky;
+            top: 50px;
+        }
         img {
             width: 55px;
             height: auto;
@@ -157,6 +161,41 @@ body {
     }
     .equal-space {
         height: 300px;
+    }
+}
+.footer {
+    img {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .teachers-img {
+        position: fixed;
+        top: 350px;
+        width: 300px;
+        height: auto;
+    }
+    #Jaberi {
+        left: 12%;
+    }
+    #Soltani {
+        left: 65%;
+    }
+    .freeExperienceButton {
+        @include vertical-center();
+        text-decoration: none;
+        background-image: linear-gradient(#6DBEF4, #3B8AE5);
+        color: #ffffff;
+        position: fixed;
+        left: 40%;
+        bottom: 30px;
+        border-radius: 30px;
+        width: 18%;
+        height: 45px;
+        span {
+            font-size: 23px;
+            color: #ffffff;
+        }
     }
 }
 
@@ -206,22 +245,6 @@ body {
     }
 }
 */
-.freeExperienceButton {
-    @include vertical-center();
-    text-decoration: none;
-    background-image: linear-gradient(#6DBEF4, #3B8AE5);
-    color: #ffffff;
-    position: fixed;
-    left: 40%;
-    bottom: 30px;
-    border-radius: 30px;
-    width: 18%;
-    height: 45px;
-    span {
-        font-size: 23px;
-        color: #ffffff;
-    }
-}
 
 
 //below codes are for class (Parsa).
