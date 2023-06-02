@@ -19,6 +19,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: unset;
   border-top: 1px dashed #d3d3d3;
   border-bottom: 1px dashed #d3d3d3;
   padding: 23px 0;
@@ -38,6 +39,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: unset;
 }
 .chats .teachers-chats img {
   width: 200px;
