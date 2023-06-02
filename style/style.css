@@ -89,6 +89,7 @@ body {
 }
 .boxes .box img {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 80px;
@@ -280,34 +281,55 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .three-last-boxes .calendar-box {
-    order: 1;
-  }
   .three-last-boxes .calendar-box img {
-    margin-bottom: 20px;
+    position: relative;
+    bottom: 10px;
+  }
+  .three-last-boxes .calendar-box h2 {
+    position: relative;
+    bottom: 25px;
   }
   .three-last-boxes .calendar-box p {
+    position: relative;
+    bottom: 50px;
     color: #959595;
-    font-size: 20px;
+    font-size: 12px;
     text-align: center;
-    margin-bottom: 50px;
   }
-  .three-last-boxes .teachers-box {
-    order: 0;
+  .three-last-boxes .laptop-box img {
+    position: relative;
+    bottom: 77px;
   }
-  .three-last-boxes .laptop-box {
-    display: flex;
-    order: 2;
+  .three-last-boxes .laptop-box p {
+    position: relative;
+    bottom: 30px;
+    color: #959595;
+    width: 80%;
+    text-align: center;
+  }
+  .three-last-boxes .teachers-box img {
+    position: relative;
+    bottom: 40px;
+  }
+  .three-last-boxes .teachers-box h2 {
+    position: relative;
+    bottom: 17px;
+  }
+  .three-last-boxes .teachers-box p {
+    position: relative;
+    bottom: 30px;
+    color: #959595;
+    text-align: center;
   }
   .footer .teachers-img {
     display: none;
   }
   .footer .freeExperienceButton {
-    bottom: 20px;
+    bottom: 6px;
     border-radius: 30px;
-    width: 30%;
-    height: 35px;
-    font-size: 12px;
+    width: 22%;
+    height: 22px;
+    font-size: 10px;
   }
 }
 /*
