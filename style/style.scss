@@ -259,13 +259,22 @@ body {
         }
     }
     .boxes {
+        .Box {
+            height: 600px;
+            .good-news-box {
+                img {
+                    position: relative;
+                    bottom: 23px;
+                }
+            }
+        }
         .box {
             width: 200px;
             height: 150px;
             border-radius: 15px;
             img {
                 bottom: 20px;
-                width: 70px;
+                width: 65px;
             }
             .texts {
                 bottom: 30px;
@@ -279,56 +288,56 @@ body {
                     font-size: 12px;
                 }
             }
-            .three-last-boxes {
-                display: flex;
-                flex-direction: column;
-                .calendar-box {
-                    img {
-                        position: relative;
-                        bottom: 10px;
-                    }
-                    h2 {
-                        position: relative;
-                        bottom: 25px;
-                    }
-                    p {
-                        position: relative;
-                        bottom: 50px;
-                        color: #959595;
-                        font-size: 12px;
-                        text-align: center;
-                    }
+        .three-last-boxes {  
+            .Box {
+            .calendar-box {
+                img {
+                    position: absolute;
+                    bottom: 23px;
                 }
-                .laptop-box {
-                    img {
-                        position: relative;
-                        bottom: 77px;
-                    }
-                    p {
+                h2 {
                     position: relative;
-                    bottom: 30px;
-                    color: #959595; 
-                    width: 80%;
+                    bottom: 25px;
+                }
+                p {
+                    position: relative;
+                    bottom: 50px;
+                    color: #959595;
+                    font-size: 20px;
                     text-align: center;
-                    } 
                 }
-                .teachers-box {
-                    img {
-                        position: relative;
-                        bottom: 40px;
-                    }
-                    h2 {
-                        position: relative;
-                        bottom: 17px;
-                    }
-                    p {
-                        position: relative;
-                        bottom: 30px;            
-                        color: #959595;
-                        text-align: center;
-                    }
+            }
+            .laptop-box {
+                img {
+                    position: relative;
+                    bottom: 23px;
                 }
+                p {
+                position: relative;
+                bottom: 30px;
+                color: #959595; 
+                width: 80%;
+                text-align: center;
+                } 
+            }
+            .teachers-box {
+                img {
+                    position: relative;
+                    bottom: 40px;
+                }
+                h2 {
+                    position: relative;
+                    bottom: 17px;
+                }
+                p {
+                    position: relative;
+                    bottom: 30px;            
+                    color: #959595;
+                    text-align: center;
+                }
+            }
         }
+    }
     }
     .attributes {
         direction: rtl;

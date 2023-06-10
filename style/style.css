@@ -234,6 +234,13 @@ body {
   .chats .go-down {
     display: none;
   }
+  .boxes .Box {
+    height: 600px;
+  }
+  .boxes .Box .good-news-box img {
+    position: relative;
+    bottom: 23px;
+  }
   .boxes .box {
     width: 200px;
     height: 150px;
@@ -241,7 +248,7 @@ body {
   }
   .boxes .box img {
     bottom: 20px;
-    width: 70px;
+    width: 65px;
   }
   .boxes .box .texts {
     bottom: 30px;
@@ -255,45 +262,41 @@ body {
   .boxes .box .texts span {
     font-size: 12px;
   }
-  .boxes .box .three-last-boxes {
-    display: flex;
-    flex-direction: column;
+  .boxes .box .three-last-boxes .Box .calendar-box img {
+    position: absolute;
+    bottom: 23px;
   }
-  .boxes .box .three-last-boxes .calendar-box img {
-    position: relative;
-    bottom: 10px;
-  }
-  .boxes .box .three-last-boxes .calendar-box h2 {
+  .boxes .box .three-last-boxes .Box .calendar-box h2 {
     position: relative;
     bottom: 25px;
   }
-  .boxes .box .three-last-boxes .calendar-box p {
+  .boxes .box .three-last-boxes .Box .calendar-box p {
     position: relative;
     bottom: 50px;
     color: #959595;
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
   }
-  .boxes .box .three-last-boxes .laptop-box img {
+  .boxes .box .three-last-boxes .Box .laptop-box img {
     position: relative;
-    bottom: 77px;
+    bottom: 23px;
   }
-  .boxes .box .three-last-boxes .laptop-box p {
+  .boxes .box .three-last-boxes .Box .laptop-box p {
     position: relative;
     bottom: 30px;
     color: #959595;
     width: 80%;
     text-align: center;
   }
-  .boxes .box .three-last-boxes .teachers-box img {
+  .boxes .box .three-last-boxes .Box .teachers-box img {
     position: relative;
     bottom: 40px;
   }
-  .boxes .box .three-last-boxes .teachers-box h2 {
+  .boxes .box .three-last-boxes .Box .teachers-box h2 {
     position: relative;
     bottom: 17px;
   }
-  .boxes .box .three-last-boxes .teachers-box p {
+  .boxes .box .three-last-boxes .Box .teachers-box p {
     position: relative;
     bottom: 30px;
     color: #959595;
