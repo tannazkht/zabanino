@@ -255,71 +255,71 @@ body {
   .boxes .box .texts span {
     font-size: 12px;
   }
-  .attributes {
-    direction: rtl;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .attributes h2 {
-    position: sticky;
-    top: 50px;
-    font-size: 18px;
-  }
-  .attributes img {
-    width: 30px;
-    height: auto;
-  }
-  .attributes span, .attributes h3, .attributes h4 {
-    font-size: 12px;
-  }
-  .attributes .attributes-equal-space {
-    height: 200px;
-  }
-  .three-last-boxes {
+  .boxes .box .three-last-boxes {
     display: flex;
     flex-direction: column;
   }
-  .three-last-boxes .calendar-box img {
+  .boxes .box .three-last-boxes .calendar-box img {
     position: relative;
     bottom: 10px;
   }
-  .three-last-boxes .calendar-box h2 {
+  .boxes .box .three-last-boxes .calendar-box h2 {
     position: relative;
     bottom: 25px;
   }
-  .three-last-boxes .calendar-box p {
+  .boxes .box .three-last-boxes .calendar-box p {
     position: relative;
     bottom: 50px;
     color: #959595;
     font-size: 12px;
     text-align: center;
   }
-  .three-last-boxes .laptop-box img {
+  .boxes .box .three-last-boxes .laptop-box img {
     position: relative;
     bottom: 77px;
   }
-  .three-last-boxes .laptop-box p {
+  .boxes .box .three-last-boxes .laptop-box p {
     position: relative;
     bottom: 30px;
     color: #959595;
     width: 80%;
     text-align: center;
   }
-  .three-last-boxes .teachers-box img {
+  .boxes .box .three-last-boxes .teachers-box img {
     position: relative;
     bottom: 40px;
   }
-  .three-last-boxes .teachers-box h2 {
+  .boxes .box .three-last-boxes .teachers-box h2 {
     position: relative;
     bottom: 17px;
   }
-  .three-last-boxes .teachers-box p {
+  .boxes .box .three-last-boxes .teachers-box p {
     position: relative;
     bottom: 30px;
     color: #959595;
     text-align: center;
+  }
+  .boxes .attributes {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxes .attributes h2 {
+    position: sticky;
+    top: 50px;
+    font-size: 18px;
+  }
+  .boxes .attributes img {
+    width: 30px;
+    height: auto;
+  }
+  .boxes .attributes span, .boxes .attributes h3, .boxes .attributes h4 {
+    font-size: 12px;
+  }
+  .boxes .attributes .attributes-equal-space {
+    height: 200px;
   }
   .footer .teachers-img {
     display: none;

@@ -279,6 +279,55 @@ body {
                     font-size: 12px;
                 }
             }
+            .three-last-boxes {
+                display: flex;
+                flex-direction: column;
+                .calendar-box {
+                    img {
+                        position: relative;
+                        bottom: 10px;
+                    }
+                    h2 {
+                        position: relative;
+                        bottom: 25px;
+                    }
+                    p {
+                        position: relative;
+                        bottom: 50px;
+                        color: #959595;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+                .laptop-box {
+                    img {
+                        position: relative;
+                        bottom: 77px;
+                    }
+                    p {
+                    position: relative;
+                    bottom: 30px;
+                    color: #959595; 
+                    width: 80%;
+                    text-align: center;
+                    } 
+                }
+                .teachers-box {
+                    img {
+                        position: relative;
+                        bottom: 40px;
+                    }
+                    h2 {
+                        position: relative;
+                        bottom: 17px;
+                    }
+                    p {
+                        position: relative;
+                        bottom: 30px;            
+                        color: #959595;
+                        text-align: center;
+                    }
+                }
         }
     }
     .attributes {
@@ -300,55 +349,7 @@ body {
             height: 200px;
         }
     }
-    .three-last-boxes {
-        display: flex;
-        flex-direction: column;
-        .calendar-box {
-            img {
-                position: relative;
-                bottom: 10px;
-            }
-            h2 {
-                position: relative;
-                bottom: 25px;
-            }
-            p {
-                position: relative;
-                bottom: 50px;
-                color: #959595;
-                font-size: 12px;
-                text-align: center;
-            }
-        }
-        .laptop-box {
-            img {
-                position: relative;
-                bottom: 77px;
-            }
-            p {
-            position: relative;
-            bottom: 30px;
-            color: #959595; 
-            width: 80%;
-            text-align: center;
-            } 
-        }
-        .teachers-box {
-            img {
-                position: relative;
-                bottom: 40px;
-            }
-            h2 {
-                position: relative;
-                bottom: 17px;
-            }
-            p {
-                position: relative;
-                bottom: 30px;            
-                color: #959595;
-                text-align: center;
-            }
-        }
+
     // .calendar-box {
     //     order: 1;
     //     img {
