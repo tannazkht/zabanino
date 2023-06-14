@@ -322,6 +322,27 @@ body {
     font-size: 10px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer .teachers-img {
+    position: fixed;
+    top: 680px;
+    width: 200px;
+    height: auto;
+  }
+  .footer #Jaberi {
+    left: 5%;
+  }
+  .footer #Soltani {
+    left: 70%;
+  }
+  .footer .freeExperienceButton {
+    bottom: 6px;
+    border-radius: 30px;
+    width: 20%;
+    height: 34px;
+    font-size: 12px;
+  }
+}
 /*
 .footer {
     // display: flex;

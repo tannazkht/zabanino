@@ -422,20 +422,6 @@ body {
     //     order: 2;
     // }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-
-}
-
-
-
-
-
-
-
-
-
-
-
     .footer {
         // #curve-img {
         //     height: 400px;
@@ -449,6 +435,35 @@ body {
             width: 22%;
             height: 22px;
             font-size: 10px;
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer {
+        // #curve-img {
+        //     height: 400px;
+        // }
+        .teachers-img {
+            
+        }
+        .teachers-img {
+            position: fixed;
+            top: 680px;
+            width: 200px;
+            height: auto;
+        }
+        #Jaberi {
+            left: 5%;
+        }
+        #Soltani {
+            left: 70%;
+        }
+        .freeExperienceButton {
+            bottom: 6px;
+            border-radius: 30px;
+            width: 20%;
+            height: 34px;
+            font-size: 12px;
         }
     }
 }
