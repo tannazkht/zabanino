@@ -288,57 +288,100 @@ body {
                     font-size: 12px;
                 }
             }
-        .three-last-boxes {  
-            .Box {
+        }
+    //     .three-last-boxes {  
+    //         .Box {
+    //         .calendar-box {
+    //             img {
+    //                 position: absolute;
+    //                 bottom: 23px;
+    //             }
+    //             h2 {
+    //                 position: relative;
+    //                 bottom: 25px;
+    //             }
+    //             p {
+    //                 position: relative;
+    //                 bottom: 50px;
+    //                 color: #959595;
+    //                 font-size: 20px;
+    //                 text-align: center;
+    //             }
+    //         }
+    //         .laptop-box {
+    //             img {
+    //                 position: relative;
+    //                 bottom: 23px;
+    //             }
+    //             p {
+    //             position: relative;
+    //             bottom: 30px;
+    //             color: #959595; 
+    //             width: 80%;
+    //             text-align: center;
+    //             } 
+    //         }
+    //         .teachers-box {
+    //             img {
+    //                 position: relative;
+    //                 bottom: 40px;
+    //             }
+    //             h2 {
+    //                 position: relative;
+    //                 bottom: 17px;
+    //             }
+    //             p {
+    //                 position: relative;
+    //                 bottom: 30px;            
+    //                 color: #959595;
+    //                 text-align: center;
+    //             }
+    //         }
+    //     }
+    // }
+    // }
+    .three-last-boxes {
+        .calendar-section {
             .calendar-box {
                 img {
-                    position: absolute;
-                    bottom: 23px;
+                    position: relative;
+                    bottom: 11px;
                 }
                 h2 {
-                    position: relative;
-                    bottom: 25px;
+                    font-size: 18px;
                 }
                 p {
-                    position: relative;
-                    bottom: 50px;
-                    color: #959595;
-                    font-size: 20px;
-                    text-align: center;
+                    font-size: 15px;
                 }
             }
-            .laptop-box {
-                img {
-                    position: relative;
-                    bottom: 23px;
-                }
-                p {
+            
+    }
+    .laptop-section {
+        .laptop-box {
+            img {
                 position: relative;
-                bottom: 30px;
-                color: #959595; 
-                width: 80%;
-                text-align: center;
-                } 
+                bottom: 45px;
             }
-            .teachers-box {
-                img {
-                    position: relative;
-                    bottom: 40px;
-                }
-                h2 {
-                    position: relative;
-                    bottom: 17px;
-                }
-                p {
-                    position: relative;
-                    bottom: 30px;            
-                    color: #959595;
-                    text-align: center;
-                }
+            p {
+                font-size: 14px;
             }
         }
     }
+    .teachers-section {
+        .teachers-box {
+           img {
+            position: relative;
+            bottom: 17px;
+           } 
+           h2 {
+            font-size: 18px;
+           }
+           p {
+            font-size: 12px;
+           }
+        }
     }
+}
     .attributes {
         direction: rtl;
         @include flex-manager(column, center, center); // vertical center item by "flex".
@@ -379,6 +422,20 @@ body {
     //     order: 2;
     // }
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
     .footer {
         // #curve-img {
         //     height: 400px;

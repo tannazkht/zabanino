@@ -262,45 +262,32 @@ body {
   .boxes .box .texts span {
     font-size: 12px;
   }
-  .boxes .box .three-last-boxes .Box .calendar-box img {
-    position: absolute;
-    bottom: 23px;
-  }
-  .boxes .box .three-last-boxes .Box .calendar-box h2 {
+  .boxes .three-last-boxes .calendar-section .calendar-box img {
     position: relative;
-    bottom: 25px;
+    bottom: 11px;
   }
-  .boxes .box .three-last-boxes .Box .calendar-box p {
+  .boxes .three-last-boxes .calendar-section .calendar-box h2 {
+    font-size: 18px;
+  }
+  .boxes .three-last-boxes .calendar-section .calendar-box p {
+    font-size: 15px;
+  }
+  .boxes .three-last-boxes .laptop-section .laptop-box img {
     position: relative;
-    bottom: 50px;
-    color: #959595;
-    font-size: 20px;
-    text-align: center;
+    bottom: 45px;
   }
-  .boxes .box .three-last-boxes .Box .laptop-box img {
-    position: relative;
-    bottom: 23px;
+  .boxes .three-last-boxes .laptop-section .laptop-box p {
+    font-size: 14px;
   }
-  .boxes .box .three-last-boxes .Box .laptop-box p {
-    position: relative;
-    bottom: 30px;
-    color: #959595;
-    width: 80%;
-    text-align: center;
-  }
-  .boxes .box .three-last-boxes .Box .teachers-box img {
-    position: relative;
-    bottom: 40px;
-  }
-  .boxes .box .three-last-boxes .Box .teachers-box h2 {
+  .boxes .three-last-boxes .teachers-section .teachers-box img {
     position: relative;
     bottom: 17px;
   }
-  .boxes .box .three-last-boxes .Box .teachers-box p {
-    position: relative;
-    bottom: 30px;
-    color: #959595;
-    text-align: center;
+  .boxes .three-last-boxes .teachers-section .teachers-box h2 {
+    font-size: 18px;
+  }
+  .boxes .three-last-boxes .teachers-section .teachers-box p {
+    font-size: 12px;
   }
   .boxes .attributes {
     direction: rtl;
