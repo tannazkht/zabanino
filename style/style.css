@@ -43,6 +43,10 @@
   src: url(../assets/font/iransans/woff/IRANSansWeb_Bold.woff) format("woff");
   src: url(../assets/font/iransans/woff2/IRANSansWeb_Bold.woff2) format("woff2");
 }
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -106,7 +110,7 @@ body {
 }
 
 .boxes .Box {
-  height: 600px;
+  height: 650px;
 }
 .boxes .Box .good-news-box img {
   position: relative;
