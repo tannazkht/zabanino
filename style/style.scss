@@ -367,10 +367,11 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .footer {
         .teachers-img {
-            position: fixed;
-            top: 670px;
-            width: 230px;
-            height: auto;
+            display: none;
+            // position: fixed;
+            // top: 670px;
+            // width: 230px;
+            // height: auto;
         }
         #Jaberi {
             left: 2%;
