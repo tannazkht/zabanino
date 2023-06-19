@@ -1,7 +1,5 @@
-@font-face {
-    font-family: IranSans;
-    src: url(../assets/font/Iran-Sans.ttf);
-}
+@import "../style/iran-sans.scss";
+
 @mixin flex-manager($direction-value, $justify-value, $align-value) {
     display: flex;
     flex-direction: $direction-value;
@@ -199,12 +197,12 @@ body {
     }
     .teachers-img {
         position: fixed;
-        top: 350px;
+        top: 300px;
         width: 300px;
         height: auto;
     }
     #Jaberi {
-        left: 12%;
+        left: 10%;
     }
     #Soltani {
         left: 65%;
@@ -236,7 +234,6 @@ body {
         }
         .title-description {
             h1 {
-                // width: 70%;
                 font-size: 14px;
             }
         }
@@ -289,58 +286,7 @@ body {
                 }
             }
         }
-    //     .three-last-boxes {  
-    //         .Box {
-    //         .calendar-box {
-    //             img {
-    //                 position: absolute;
-    //                 bottom: 23px;
-    //             }
-    //             h2 {
-    //                 position: relative;
-    //                 bottom: 25px;
-    //             }
-    //             p {
-    //                 position: relative;
-    //                 bottom: 50px;
-    //                 color: #959595;
-    //                 font-size: 20px;
-    //                 text-align: center;
-    //             }
-    //         }
-    //         .laptop-box {
-    //             img {
-    //                 position: relative;
-    //                 bottom: 23px;
-    //             }
-    //             p {
-    //             position: relative;
-    //             bottom: 30px;
-    //             color: #959595; 
-    //             width: 80%;
-    //             text-align: center;
-    //             } 
-    //         }
-    //         .teachers-box {
-    //             img {
-    //                 position: relative;
-    //                 bottom: 40px;
-    //             }
-    //             h2 {
-    //                 position: relative;
-    //                 bottom: 17px;
-    //             }
-    //             p {
-    //                 position: relative;
-    //                 bottom: 30px;            
-    //                 color: #959595;
-    //                 text-align: center;
-    //             }
-    //         }
-    //     }
-    // }
-    // }
-    .three-last-boxes {
+.three-last-boxes {
         .calendar-section {
             .calendar-box {
                 img {
@@ -353,8 +299,7 @@ body {
                 p {
                     font-size: 15px;
                 }
-            }
-            
+            }   
     }
     .laptop-section {
         .laptop-box {
@@ -401,31 +346,8 @@ body {
             height: 200px;
         }
     }
-
-    // .calendar-box {
-    //     order: 1;
-    //     img {
-    //         // margin-bottom: 20px;
-    //     }
-    //     p {
-    //         color: #959595;
-    //         font-size: 8px;
-    //         text-align: center;
-    //         margin-bottom: 50px;
-    //     } 
-    // }
-    // .teachers-box {
-    //     order: 0;
-    // }
-    // .laptop-box {
-    //     display: flex;
-    //     order: 2;
-    // }
 }
     .footer {
-        // #curve-img {
-        //     height: 400px;
-        // }
         .teachers-img {
             display: none;
         }
@@ -438,25 +360,20 @@ body {
         }
     }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .footer {
-        // #curve-img {
-        //     height: 400px;
-        // }
-        .teachers-img {
-            
-        }
         .teachers-img {
             position: fixed;
-            top: 680px;
-            width: 200px;
+            top: 670px;
+            width: 230px;
             height: auto;
         }
         #Jaberi {
-            left: 5%;
+            left: 2%;
         }
         #Soltani {
-            left: 70%;
+            left: 68%;
         }
         .freeExperienceButton {
             bottom: 6px;
@@ -467,6 +384,13 @@ body {
         }
     }
 }
+// @media only screen and (min-width: 1024px) {
+//     .footer {
+//         .teachers-img {
+//             // top: 600px;
+//         }
+//     }    
+// }
 
 
 
