@@ -52,15 +52,15 @@ html {
 }
 
 body {
-  background-image: url(../assets/images/background.jpg);
+  background-image: url("../assets/images/background.jpg");
   background-attachment: fixed;
   background-position: center;
   font-family: IranSans;
+  direction: rtl;
   margin: 0;
   padding: 0;
 }
-
-.header .title {
+body .header .title {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -70,53 +70,51 @@ body {
   padding: 23px 0;
   margin-top: 30px;
 }
-.header .title img {
+body .header .title img {
   width: 200px;
 }
-.header .title-description h1 {
+body .header .title-description h1 {
   text-align: center;
 }
-.header .title-description h1 span {
+body .header .title-description h1 span {
   color: #4482f4;
 }
-
-.chats .teachers-chats {
+body .chats .teachers-chats {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: unset;
 }
-.chats .teachers-chats img {
+body .chats .teachers-chats img {
   width: 200px;
   height: auto;
   margin: 3%;
 }
-.chats .teachers-chats #jaberi-chat {
+body .chats .teachers-chats #jaberi-chat {
   position: relative;
   top: 50px;
 }
-.chats .teachers-chats-mobile-responsive {
+body .chats .teachers-chats-mobile-responsive {
   display: none;
 }
-.chats .go-down {
+body .chats .go-down {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.chats .go-down p {
+body .chats .go-down p {
   font-size: 14px;
   color: #808080;
 }
-
-.boxes .Box {
+body .main .information-boxes {
   height: 650px;
 }
-.boxes .Box .good-news-box img {
+body .main .information-boxes .good-news-box img {
   position: relative;
   bottom: 55px;
 }
-.boxes .box {
+body .main .box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,7 +130,7 @@ body {
   background-color: #ffffff;
   box-shadow: 0 21px 13px -9px rgba(0, 0, 0, 0.06);
 }
-.boxes .box img {
+body .main .box img {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -143,100 +141,112 @@ body {
   border-radius: 100%;
   padding: 15px;
 }
-.boxes .box .texts {
+body .main .box .texts {
   position: relative;
   bottom: 30px;
   text-align: center;
 }
-.boxes .box .texts h3 {
+body .main .box .texts h3 {
   word-spacing: -0.4ch;
 }
-.boxes .box .texts p {
+body .main .box .texts p {
   color: #c5c5c5;
 }
-.boxes .box .texts span {
+body .main .box .texts span {
   color: #4482f4;
   border-bottom: 2px solid #4482f4;
 }
-.boxes .attributes {
+body .main .attributes {
   direction: rtl;
 }
-.boxes .attributes .attribute {
+body .main .attributes .attribute {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 200px;
 }
-.boxes .attributes .attribute h2 {
+body .main .attributes .attribute h2 {
   top: 50px;
 }
-.boxes .attributes .attribute img {
+body .main .attributes .attribute img {
   width: 55px;
   height: auto;
 }
-.boxes .attributes .attribute span, .boxes .attributes .attribute h4 {
+body .main .attributes .attribute span, body .main .attributes .attribute h4 {
   color: #959595;
 }
-.boxes .three-last-boxes .calendar-box img {
+body .main .calendar-box img {
   position: relative;
   bottom: 30px;
 }
-.boxes .three-last-boxes .calendar-box h2 {
+body .main .calendar-box h2 {
   position: relative;
   bottom: 25px;
 }
-.boxes .three-last-boxes .calendar-box p {
+body .main .calendar-box p {
   position: relative;
   bottom: 50px;
   color: #959595;
   font-size: 20px;
   text-align: center;
 }
-.boxes .three-last-boxes .laptop-box img {
+body .main .laptop-box img {
   position: relative;
   bottom: 77px;
 }
-.boxes .three-last-boxes .laptop-box p {
+body .main .laptop-box p {
   position: relative;
   bottom: 30px;
   color: #959595;
   width: 80%;
   text-align: center;
 }
-.boxes .three-last-boxes .teachers-box img {
+body .main .teachers-box img {
   position: relative;
   bottom: 40px;
 }
-.boxes .three-last-boxes .teachers-box h2 {
+body .main .teachers-box h2 {
   position: relative;
   bottom: 17px;
 }
-.boxes .three-last-boxes .teachers-box p {
+body .main .teachers-box p {
   position: relative;
   bottom: 30px;
   color: #959595;
   text-align: center;
 }
-
-.footer img {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+body .footer {
+  background-image: url("../assets/images/curve.svg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
 }
-.footer .teachers-img {
+body .footer .teachers-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .footer .teachers-img img {
   position: fixed;
   top: 300px;
   width: 300px;
   height: auto;
 }
-.footer #Jaberi {
-  left: 10%;
+body .footer .teachers-img .jaberi-teacher-img {
+  margin-right: 58%;
 }
-.footer #Soltani {
-  left: 65%;
+body .footer .teachers-img .soltani-teacher-img {
+  margin-left: 58%;
 }
-.footer .freeExperienceButton {
+body .footer .footer-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .footer .footer-button .freeExperienceButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,144 +255,162 @@ body {
   background-image: linear-gradient(#6DBEF4, #3B8AE5);
   color: #ffffff;
   position: fixed;
-  left: 40%;
   bottom: 30px;
   border-radius: 30px;
   width: 18%;
   height: 45px;
 }
-.footer .freeExperienceButton span {
+body .footer .footer-button .freeExperienceButton span {
   font-size: 23px;
   color: #ffffff;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .header .title img {
-    width: 100px;
+  body .header .title img {
+    width: 120px;
   }
-  .header .title-description h1 {
-    font-size: 14px;
+  body .header .title-description h1 {
+    font-size: 17px;
   }
-  .chats .teachers-chats img {
+  body .chats .teachers-chats img {
     display: none;
   }
-  .chats .teachers-chats-mobile-responsive {
-    display: block;
+  body .chats .teachers-chats-mobile-responsive {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 50px;
   }
-  .chats .teachers-chats-mobile-responsive img {
-    width: 200px;
+  body .chats .teachers-chats-mobile-responsive img {
+    width: 250px;
   }
-  .chats .go-down {
+  body .chats .go-down {
     display: none;
   }
-  .boxes .Box {
-    height: 600px;
+  body .main .information-boxes {
+    height: 350px;
   }
-  .boxes .Box .good-news-box img {
+  body .main .information-boxes .good-news-box img {
     position: relative;
     bottom: 23px;
   }
-  .boxes .box {
+  body .main .box {
     width: 200px;
     height: 150px;
     border-radius: 15px;
   }
-  .boxes .box img {
+  body .main .box img {
     bottom: 20px;
     width: 65px;
   }
-  .boxes .box .texts {
+  body .main .box .texts {
     bottom: 30px;
   }
-  .boxes .box .texts h3 {
+  body .main .box .texts h3 {
     font-size: 12px;
   }
-  .boxes .box .texts p {
+  body .main .box .texts p {
     font-size: 12px;
   }
-  .boxes .box .texts span {
+  body .main .box .texts span {
     font-size: 12px;
   }
-  .boxes .three-last-boxes .calendar-section .calendar-box img {
+  body .main .calendar-section .calendar-box img {
     position: relative;
     bottom: 11px;
   }
-  .boxes .three-last-boxes .calendar-section .calendar-box h2 {
+  body .main .calendar-section .calendar-box h2 {
     font-size: 18px;
   }
-  .boxes .three-last-boxes .calendar-section .calendar-box p {
+  body .main .calendar-section .calendar-box p {
     font-size: 15px;
   }
-  .boxes .three-last-boxes .laptop-section .laptop-box img {
+  body .main .laptop-section .laptop-box img {
     position: relative;
     bottom: 45px;
   }
-  .boxes .three-last-boxes .laptop-section .laptop-box p {
+  body .main .laptop-section .laptop-box p {
     font-size: 14px;
   }
-  .boxes .three-last-boxes .teachers-section .teachers-box img {
+  body .main .teachers-section .teachers-box img {
     position: relative;
     bottom: 17px;
   }
-  .boxes .three-last-boxes .teachers-section .teachers-box h2 {
+  body .main .teachers-section .teachers-box h2 {
     font-size: 18px;
   }
-  .boxes .three-last-boxes .teachers-section .teachers-box p {
+  body .main .teachers-section .teachers-box p {
     font-size: 12px;
   }
-  .boxes .attributes {
+  body .main .attributes {
     direction: rtl;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .boxes .attributes h2 {
+  body .main .attributes h2 {
     position: sticky;
     top: 50px;
     font-size: 18px;
   }
-  .boxes .attributes img {
+  body .main .attributes img {
     width: 30px;
     height: auto;
   }
-  .boxes .attributes span, .boxes .attributes h3, .boxes .attributes h4 {
+  body .main .attributes span, body .main .attributes h3, body .main .attributes h4 {
     font-size: 12px;
   }
-  .boxes .attributes .attributes-equal-space {
+  body .main .attributes .attributes-equal-space {
     height: 200px;
   }
-  .footer .teachers-img {
+  body .footer .teachers-img img {
     display: none;
   }
-  .footer .freeExperienceButton {
+  body .footer .footer-button .freeExperienceButton {
     bottom: 6px;
     border-radius: 30px;
-    width: 22%;
-    height: 22px;
-    font-size: 10px;
+    width: 35%;
+    height: 35px;
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .footer .teachers-img {
+  body .chats .teachers-chats img {
     display: none;
   }
-  .footer #Jaberi {
-    left: 2%;
+  body .chats .teachers-chats-mobile-responsive img {
+    position: relative;
+    width: 350px;
   }
-  .footer #Soltani {
-    left: 68%;
+  body .chats .teachers-chats-mobile-responsive img:nth-child(1) {
+    left: 15%;
   }
-  .footer .freeExperienceButton {
+  body .chats .teachers-chats-mobile-responsive img:nth-child(2) {
+    right: 15%;
+  }
+  body .chats .go-down {
+    display: none;
+  }
+  body .footer .teachers-img {
+    display: none;
+  }
+  body .footer .freeExperienceButton {
     bottom: 6px;
     border-radius: 30px;
-    width: 20%;
-    height: 34px;
-    font-size: 12px;
+    width: 40%;
+    height: 45px;
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .footer .teachers-img .jaberi-teacher-img {
+    margin-right: 65%;
+  }
+  body .footer .teachers-img .soltani-teacher-img {
+    margin-left: 65%;
   }
 }
 /*

@@ -1,5 +1,4 @@
 @import "../style/iran-sans.scss";
-
 @mixin flex-manager($direction-value, $justify-value, $align-value) {
     display: flex;
     flex-direction: $direction-value;
@@ -29,13 +28,13 @@ html {
     box-sizing: border-box;
 }
 body {
-    background-image: url(../assets/images/background.jpg);
+    background-image: url("../assets/images/background.jpg");
     background-attachment: fixed;
     background-position: center;
     font-family: IranSans;
+    direction: rtl;
     margin: 0;
     padding: 0;
-}
 .header {
     .title {
         @include flex-manager(row, center, unset); //horizontal center item by "flex".
@@ -80,8 +79,8 @@ body {
         }
     }
 }
-.boxes {
-    .Box {
+.main {
+    .information-boxes {
         height: 650px;
         .good-news-box {
             img {
@@ -143,7 +142,6 @@ body {
             }
         }
     }
-.three-last-boxes {
     .calendar-box {
         img {
             position: relative;
@@ -191,210 +189,239 @@ body {
         }
     }
 }
-}
 .footer {
-    img {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
+    //this part should be edited.
+    background-image: url("../assets/images/curve.svg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
     .teachers-img {
-        position: fixed;
-        top: 300px;
-        width: 300px;
-        height: auto;
+        @include flex-manager(row, center, center);
+        img {
+            position: fixed;
+            top: 300px;
+            width: 300px;
+            height: auto;
+        }
+        .jaberi-teacher-img {
+            margin-right: 58%;
+        }
+        .soltani-teacher-img {
+            margin-left: 58%;
+        }
     }
-    #Jaberi {
-        left: 10%;
-    }
-    #Soltani {
-        left: 65%;
-    }
-    .freeExperienceButton {
-        @include flex-manager(column, center, center); // vertical center item by "flex".
-        text-decoration: none;
-        background-image: linear-gradient(#6DBEF4, #3B8AE5);
-        color: #ffffff;
-        position: fixed;
-        left: 40%;
-        bottom: 30px;
-        border-radius: 30px;
-        width: 18%;
-        height: 45px;
-        span {
-            font-size: 23px;
+    .footer-button {
+        @include flex-manager(row, center, center);
+        .freeExperienceButton {
+            @include flex-manager(column, center, center); // vertical center item by "flex".
+            text-decoration: none;
+            background-image: linear-gradient(#6DBEF4, #3B8AE5);
             color: #ffffff;
+            position: fixed;
+            bottom: 30px;
+            border-radius: 30px;
+            width: 18%;
+            height: 45px;
+            span {
+                font-size: 23px;
+                color: #ffffff;
+            }
         }
     }
 }
-
+}
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .header {
-        .title {
-            img {
-                width: 100px;
+    body {
+        .header {
+            .title {
+                img {
+                    width: 120px;
+                }
+            }
+            .title-description {
+                h1 {
+                    font-size: 17px;
+                }
             }
         }
-        .title-description {
-            h1 {
-                font-size: 14px;
+        .chats {
+            .teachers-chats {
+                img {
+                    display: none;
+                }
             }
-        }
-    }
-    .chats {
-        .teachers-chats {
-            img {
+            .teachers-chats-mobile-responsive {
+                @include flex-manager(column, center, center); // vertical center item by "flex".
+                position: relative;
+                top: 50px;
+                img {
+                    width: 250px;
+                }
+            }
+            .go-down {
                 display: none;
             }
         }
-        .teachers-chats-mobile-responsive {
-            display: block;
-            @include flex-manager(column, center, center); // vertical center item by "flex".
-            img {
+        .main {
+            .information-boxes {
+                height: 350px;
+                .good-news-box {
+                    img {
+                        position: relative;
+                        bottom: 23px;
+                    }
+                }
+            }
+            .box {
                 width: 200px;
-            }
-        }
-        .go-down {
-            display: none;
-        }
-    }
-    .boxes {
-        .Box {
-            height: 600px;
-            .good-news-box {
+                height: 150px;
+                border-radius: 15px;
                 img {
-                    position: relative;
-                    bottom: 23px;
+                    bottom: 20px;
+                    width: 65px;
+                }
+                .texts {
+                    bottom: 30px;
+                    h3 {
+                        font-size: 12px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                    span {
+                        font-size: 12px;
+                    }
                 }
             }
-        }
-        .box {
-            width: 200px;
-            height: 150px;
-            border-radius: 15px;
-            img {
-                bottom: 20px;
-                width: 65px;
+            .calendar-section {
+                .calendar-box {
+                    img {
+                        position: relative;
+                        bottom: 11px;
+                    }
+                    h2 {
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }   
             }
-            .texts {
-                bottom: 30px;
-                h3 {
-                    font-size: 12px;
-                }
-                p {
-                    font-size: 12px;
-                }
-                span {
-                    font-size: 12px;
+            .laptop-section {
+                .laptop-box {
+                    img {
+                        position: relative;
+                        bottom: 45px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
                 }
             }
-        }
-.three-last-boxes {
-        .calendar-section {
-            .calendar-box {
-                img {
-                    position: relative;
-                    bottom: 11px;
+            .teachers-section {
+                .teachers-box {
+                    img {
+                        position: relative;
+                        bottom: 17px;
+                    } 
+                    h2 {
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
                 }
+            }
+            .attributes {
+                direction: rtl;
+                @include flex-manager(column, center, center); // vertical center item by "flex".
                 h2 {
+                    position: sticky;
+                    top: 50px;
                     font-size: 18px;
                 }
-                p {
-                    font-size: 15px;
+                img {
+                    width: 30px;
+                    height: auto;
                 }
-            }   
-    }
-    .laptop-section {
-        .laptop-box {
-            img {
-                position: relative;
-                bottom: 45px;
-            }
-            p {
-                font-size: 14px;
+                span, h3, h4 {
+                    font-size: 12px;
+                }
+                .attributes-equal-space {
+                    height: 200px;
+                }
             }
         }
-    }
-    .teachers-section {
-        .teachers-box {
-           img {
-            position: relative;
-            bottom: 17px;
-           } 
-           h2 {
-            font-size: 18px;
-           }
-           p {
-            font-size: 12px;
-           }
+        .footer {
+            .teachers-img {
+                img {
+                    display: none;
+                }
+            }
+            .footer-button {
+                .freeExperienceButton {
+                    bottom: 6px;
+                    border-radius: 30px;
+                    width: 35%;
+                    height: 35px;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
-    .attributes {
-        direction: rtl;
-        @include flex-manager(column, center, center); // vertical center item by "flex".
-        h2 {
-            position: sticky;
-            top: 50px;
-            font-size: 18px;
-        }
-        img {
-            width: 30px;
-            height: auto;
-        }
-        span, h3, h4 {
-            font-size: 12px;
-        }
-        .attributes-equal-space {
-            height: 200px;
-        }
-    }
-}
-    .footer {
-        .teachers-img {
-            display: none;
-        }
-        .freeExperienceButton {
-            bottom: 6px;
-            border-radius: 30px;
-            width: 22%;
-            height: 22px;
-            font-size: 10px;
-        }
-    }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .footer {
-        .teachers-img {
-            display: none;
-            // position: fixed;
-            // top: 670px;
-            // width: 230px;
-            // height: auto;
+    body {
+        .chats {
+            .teachers-chats {
+                img {
+                    display: none;
+                }
+            }
+            .teachers-chats-mobile-responsive {
+                img {
+                    position: relative;
+                    width: 350px;
+                }
+                img:nth-child(1) {
+                    left: 15%;
+                }
+                img:nth-child(2) {
+                    right: 15%;
+                }
+            }
+            .go-down {
+                display: none;
+            }
         }
-        #Jaberi {
-            left: 2%;
-        }
-        #Soltani {
-            left: 68%;
-        }
-        .freeExperienceButton {
-            bottom: 6px;
-            border-radius: 30px;
-            width: 20%;
-            height: 34px;
-            font-size: 12px;
+        .footer {
+            .teachers-img {
+                display: none;
+            }
+            .freeExperienceButton {
+                bottom: 6px;
+                border-radius: 30px;
+                width: 40%;
+                height: 45px;
+                font-size: 17px;
+            }
         }
     }
 }
-// @media only screen and (min-width: 1024px) {
-//     .footer {
-//         .teachers-img {
-//             // top: 600px;
-//         }
-//     }    
-// }
+@media only screen and (min-width: 1024px) {
+    body {
+        .footer {
+            .teachers-img {
+                .jaberi-teacher-img {
+                    margin-right: 65%;
+                }
+                .soltani-teacher-img {
+                    margin-left: 65%;
+                }
+            }
+        }
+    }
+}
 
 
 
